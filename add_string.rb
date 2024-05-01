@@ -1,0 +1,2 @@
+class AddString
+end
