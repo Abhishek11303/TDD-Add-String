@@ -5,5 +5,9 @@ RSpec.describe AddString, type: :request do
       object = AddString.new
       expect(object).to be_kind_of(AddString)
     end
+
+    it 'checks if method is present or not' do
+      expect(AddString.method_defined?(:add_string)).to eq(true)
+    end
   end
 end
